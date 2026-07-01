@@ -1,0 +1,9 @@
+hi
+
+Git commands.
+
+Git add .  addsnew
+
+Git commit -m "adding" (makes comment)
+
+Git push   pushes to repo

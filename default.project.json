@@ -1,0 +1,132 @@
+{
+  "name": "roblox",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "src/shared"
+      },
+      "BetterTween": {
+        "$path": "src/replicated/BetterTween.luau"
+      },
+      "Future": {
+        "$path": "src/replicated/Future.luau"
+      }
+    },
+
+    "ServerScriptService": {
+      "$path": "src/server"
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "$path": "src/client"
+      },
+      "StarterCharacterScripts": {
+        "$path": "src/starter-character"
+      }
+    },
+
+    "StarterGui": {
+      "ScreenGui": {
+        "$className": "ScreenGui",
+        "e": {
+          "$className": "TextButton",
+          "LocalScript": {
+            "$path": "src/starter-gui/ScreenGui/e/LocalScript.client.luau"
+          }
+        }
+      }
+    },
+
+    "StarterPack": {
+      "imitate": {
+        "$className": "Tool",
+        "RaycastScript": {
+          "$path": "src/starter-pack/imitate/RaycastScript.client.luau"
+        }
+      }
+    },
+
+    "Workspace": {
+      "$properties": {
+        "FilteringEnabled": true
+      },
+      "Baseplate": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Color": [
+            0.38823,
+            0.37254,
+            0.38823
+          ],
+          "Locked": true,
+          "Position": [
+            0,
+            -10,
+            0
+          ],
+          "Size": [
+            512,
+            20,
+            512
+          ]
+        }
+      },
+      "metatables!": {
+        "$path": "src/workspace/metatables!.server.luau"
+      },
+      "coroutines": {
+        "$path": "src/workspace/coroutines.server.luau"
+      },
+      "Goal": {
+        "$className": "Part",
+        "Script": {
+          "$path": "src/workspace/Goal/Script.server.luau"
+        }
+      },
+      "AttributePart": {
+        "$className": "Part",
+        "Script": {
+          "$path": "src/workspace/AttributePart/Script.server.luau"
+        }
+      },
+      "TweeningPart": {
+        "$className": "Part",
+        "TweeningScript": {
+          "$path": "src/workspace/TweeningPart/TweeningScript.server.luau"
+        }
+      },
+      "ModelGroup": {
+        "$className": "Folder",
+        "Rig": {
+          "$className": "Model",
+          "pathfind": {
+            "$path": "src/workspace/ModelGroup/Rig/pathfind.server.luau"
+          }
+        }
+      }
+    },
+
+    "Lighting": {
+      "$properties": {
+        "Ambient": [
+          0,
+          0,
+          0
+        ],
+        "Brightness": 2,
+        "GlobalShadows": true,
+        "Outlines": false,
+        "Technology": "Voxel"
+      }
+    },
+    "SoundService": {
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
+    }
+  }
+}
